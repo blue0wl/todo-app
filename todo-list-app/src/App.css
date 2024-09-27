@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+.App {
+  text-align: center;
+}
+
+.todo-body {
+  background-image: 
+    linear-gradient(
+      rgba(232, 170, 116, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), 
+    url("/public/bg5.jpeg");
+  background-position:center; 
+  background-repeat: no-repeat;
+  background-size:cover; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.todo-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1; 
+  background-image: url("/public/fall2.gif");
+  background-size:50%; 
+  
+}
+
+.todo-list-container {
+  width: 400px;
+  margin: 0 auto;
+  background-image:url("/public/paper6.png");
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(244, 238, 238, 0.1);
+  background-size: 103%; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  margin-top:2%;
+  z-index: 2;
+  position: relative;
+}
+
+
+.todo-title
+{
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.todo-input-container {
+  display: flex;
+  margin-bottom: 20px;
+  
+}
+
+.todo-input-container input {
+  flex: 1;
+  margin-right: 10px;
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.no-todos-message
+{
+  font-family: "Cedarville Cursive", cursive;
+  overflow-wrap:break-word;
+  text-wrap:wrap;
+  color:black;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#d8c5a1;
+  padding: 10px;
+  border: 1px solid #7a6314;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size:large;
+}
+
+.todo-listing
+{
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.actions button {
+  margin-right: 5px;
+}
+
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.no-todos-message {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+
+}
+
+.edit-input {
+  width: 70%;
+}
+
+
